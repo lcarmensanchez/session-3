@@ -3,19 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Chapitre 1</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Chapitre 1</h1>
+      <nav class="navigation">
+          <a class="navbar-brand" href="../index.html">Retour à l'index</a>
+          <a class="navbar-brand" href="chapitre-2.html">Chapitre suivant</a>
+        </nav>
+      <header id="head">
+          <div class="container">
+            <div class="row">
+              <h1 class="lead"><b>Chapitre 1 : instantanés de manifestation</b></h1>
+              <p class='line'>Aliquam erat volutpat. Morbi gravida velit nisl. Duis facilisis aliquam nisi, ut auctor metus. Curabitur ex diam, mollis at odio sit amet, posuere hendrerit massa. Cras mi nisl, gravida quis orci sed, consequat sagittis est. Mauris ante magna, sagittis sit amet maximus nec, accumsan non urna. Aenean eget ipsum pretium, pretium tortor non, aliquet elit. Phasellus tempor quam ante, id scelerisque felis commodo et. Nulla vehicula sodales sapien vel scelerisque. Duis vestibulum a lacus in euismod. Etiam tincidunt elementum mattis. Nulla iaculis pellentesque consectetur.</p>
+            </div>
+          </div>
+        </header>      
+    <div id="for-gallery" class="container">
+      <div id="gallery">
+        <carousel-3d :width="700" :height="465">
+          <slide :index="0">
+            <img src="https://pbs.twimg.com/media/DeJ5QeZXkAAPMgk.jpg" />
+          </slide>
+          <slide :index="1">
+            <img src="https://pbs.twimg.com/media/DeJ5RFPXcAIFmYD.jpg" />
+          </slide>
+          <slide :index="2">
+            <img src="https://pbs.twimg.com/media/DeJ5a5dW0AEZ4Kg.jpg" />
+          </slide>
+        </carousel-3d>
+      </div>
+    </div>
 
-    <p>Aliquam erat volutpat. Morbi gravida velit nisl. Duis facilisis aliquam nisi, ut auctor metus. Curabitur ex diam, mollis at odio sit amet, posuere hendrerit massa. Cras mi nisl, gravida quis orci sed, consequat sagittis est. Mauris ante magna, sagittis sit amet maximus nec, accumsan non urna. Aenean eget ipsum pretium, pretium tortor non, aliquet elit. Phasellus tempor quam ante, id scelerisque felis commodo et. Nulla vehicula sodales sapien vel scelerisque. Duis vestibulum a lacus in euismod. Etiam tincidunt elementum mattis. Nulla iaculis pellentesque consectetur.</p>
+    <script src="../vendors/vue.min.js"></script>
+    <script src="../vendors/vue-carousel-3d.min.js"></script>
+    <script src="../gallery.js"></script>
 
-    <ul>
-      <li>
-        <a href="chapitre-2.html">Chapitre suivant</a>
-      </li>
-      <li>
-        <a href="../index.html">Retour au sommaire</a>
-      </li>
-    </ul>
   </body>
-</html>
